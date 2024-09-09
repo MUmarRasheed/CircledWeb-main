@@ -8,6 +8,7 @@ export default defineConfig({
     rollupOptions: {
       external: ['/assets/HowItWorks.png']
     }
-  }
-  base: '/',  // Adjust the base URL if deploying to a subdirectory
+  },
+  base: '/' // 
+//  Adjust the base URL if deploying to a subdirectory
 })
