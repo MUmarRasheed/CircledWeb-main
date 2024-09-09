@@ -1,0 +1,27 @@
+.pic-chooser {
+  input[type="file"] {
+    display: none;
+  }
+
+  .wrap-btn {
+    justify-content: space-between;
+    align-items: center;
+    // flex-direction: row-reverse;
+  }
+
+  .img-container {
+    // max-height: 400px;
+    border: 2px dashed var(--black-200);
+    display: grid;
+    place-items: center;
+    margin-block: 2em;
+    min-height: 200px;
+    border-radius: 0.6em;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}

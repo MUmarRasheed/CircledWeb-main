@@ -1,0 +1,15 @@
+.pagination-container {
+  justify-content: center;
+  gap: 1em;
+  margin-block: 1em;
+
+  .outline-btn {
+    border-width: 1px;
+    border-radius: 2px;
+  }
+
+  .active {
+    background-color: var(--black-100);
+    color: var(--white);
+  }
+}

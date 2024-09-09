@@ -1,0 +1,29 @@
+.profile-pic-update {
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  margin-block: 2em;
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.pic-wrap {
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.edit-wrap {
+  max-height: 92vh;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .edit-wrap {
+    max-height: unset;
+  }
+}

@@ -1,0 +1,74 @@
+#login {
+  margin-block: 4em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-inline: 2em;
+  justify-content: center;
+  gap: 2em;
+
+  .help-text {
+    margin-bottom: 2em;
+  }
+
+  & > .img-container {
+    & > img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .login-container {
+    margin: 3em;
+    max-width: 500px;
+    margin-inline: auto;
+    h1 {
+      margin-bottom: 2em;
+    }
+  }
+
+  .otherLogins {
+    color: var(--black-100);
+    margin-top: 2em;
+
+    .decor {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid var(--black-100);
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+    }
+
+    .decor span {
+      background: #fff;
+      padding: 0 10px;
+      color: var(--black-100);
+    }
+
+    .login-icons {
+      place-content: center;
+      gap: 2em;
+    }
+
+    .help-text {
+      margin-top: 2em;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .error-msg {
+    margin-bottom: 3em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #login {
+    grid-template-columns: 1fr;
+    & > .img-container {
+      display: none;
+    }
+  }
+}

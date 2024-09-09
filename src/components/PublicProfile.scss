@@ -1,0 +1,99 @@
+#public-profile {
+  padding-inline: 1em;
+
+  .profile-header {
+    margin-top: 3em;
+    width: fit-content;
+    margin-inline: auto;
+    padding: 1em;
+    background-color: var(--white-100);
+    border-radius: 0.3em;
+
+    .detail {
+      gap: 2.2em;
+      align-items: center;
+      margin-bottom: 2.5em;
+      #profile_pic {
+        width: 5.3em;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .user-name {
+        p {
+          font-weight: 600;
+        }
+
+        .stars {
+          gap: 1em;
+          background-color: var(--white-200);
+          border-radius: 4px;
+          padding: 0.5em;
+          color: var(--black-100);
+        }
+      }
+    }
+    .message-grp {
+      gap: 2em;
+      margin-top: 2em;
+      align-items: center;
+      img {
+        aspect-ratio: 1;
+        height: 3.6em;
+        cursor: pointer;
+      }
+
+      .btn-container {
+        width: auto;
+        filter: grayscale(100%); /* Black and white images */
+
+      }
+      .btn-primary {
+        margin-inline: 0;
+      }
+    }
+    .desc {
+      max-width: 600px;
+      line-height: 24px;
+    }
+
+    .location {
+      gap: 1em;
+      align-items: center;
+      margin-top: 2em;
+
+      img {
+        width: 1.8em;
+        aspect-ratio: 1;
+      }
+      span {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.3px;
+        max-width: 200px;
+      }
+    }
+  }
+}
+
+.products-content {
+  .tabs {
+    border-block: 1px solid var(--black);
+    display: flex;
+    margin-block: 3em 1em;
+    cursor: pointer;
+
+    p {
+      flex: 1;
+      text-align: center;
+      margin: 0;
+      padding-block: 1em;
+    }
+
+    p.active-tab {
+      font-weight: 500;
+      border-bottom: 1.75px solid var(--black);
+    }
+  }
+}

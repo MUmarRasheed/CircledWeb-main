@@ -1,0 +1,91 @@
+#news-page {
+  margin-bottom: 2em;
+
+  .light {
+    color: var(--black-100);
+  }
+
+  .t1 {
+    line-height: 25px;
+  }
+  .news-container {
+    max-width: clamp(400px, 100%, 450px);
+    overflow: hidden;
+    margin-inline: auto;
+    border-radius: 1.8em 1.8em 0 0;
+
+    .newsimage {
+      max-width: 400px;
+      height: auto;
+      object-fit: cover;
+      filter: grayscale(100%); /* Black and white images */
+
+    }
+
+    .stars {
+      justify-content: center;
+      margin-block: 1em;
+      filter: grayscale(100%); /* Black and white images */
+
+    }
+
+    .center-text {
+      margin-block: 1em 2em;
+    }
+
+    .author {
+      text-transform: uppercase;
+      margin-bottom: 0;
+      filter: grayscale(100%); /* Black and white images */
+
+    }
+
+    .date {
+      margin: 0;
+      font-size: 0.9em;
+    }
+  }
+
+  .category-container {
+    justify-content: space-between;
+    margin-top: 5em;
+    filter: grayscale(100%); /* Black and white images */
+
+  }
+}
+
+.brands {
+  background-color: var(--white-200);
+  padding: 1em 2em 2em 2em;
+  .category-container {
+    justify-content: space-around !important;
+    align-items: center;
+    gap: 3em;
+
+    img {
+      max-width: 200px;
+      height: auto;
+      object-fit: contain;
+      filter: grayscale(100%); /* Black and white images */
+
+    }
+  }
+}
+
+#insurance {
+  margin: 2em;
+  .insurance-container {
+    border-radius: 0.6em;
+    background: var(--white-300);
+    justify-content: space-between;
+    padding: 2em;
+
+    .image-box {
+      background-color: var(--black-100);
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      margin-right: 2em;
+    }
+  }
+}

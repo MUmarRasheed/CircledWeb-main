@@ -1,0 +1,20 @@
+.selectMulti {
+  .options-container {
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .select-option {
+    padding: 0.4em 1.4em;
+    border-radius: 2px;
+    // background-color: var(--white-300);
+    border: 1px solid var(--black-100);
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+
+  .selected-option {
+    background-color: var(--black-100);
+    color: var(--white);
+  }
+}

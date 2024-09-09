@@ -1,0 +1,17 @@
+{
+  "login": {
+    "getStarted": "Get Started.",
+    "email": "Email",
+    "name": "Name",
+    "password": "Password",
+    "signIn": "SIGN IN",
+    "orSignInWith": "Or sign in with",
+    "dontHaveAccount": "Don't have an account?",
+    "registerNow": "Register now!",
+    "signup": "SIGN UP",
+    "orSignUpWith": "Or sign up with",
+    "alreadyHaveAccount": "Already have an account?",
+    "signInNow": "Sign in now!",
+    "phone": "Mobile Number"
+  }
+}

@@ -1,0 +1,78 @@
+#address-list {
+  max-width: 500px;
+  margin: 4em auto;
+  padding-inline: 1em;
+
+  .address-header {
+    margin-block: 2em 1em;
+    gap: 2em;
+
+    margin-bottom: 3em;
+  }
+
+  .selector {
+    color: var(--green);
+    margin-bottom: 1em;
+  }
+
+  .address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+    padding: 0.35em 1em;
+    border: 1px solid var(--black-100);
+    border-radius: 5px;
+    cursor: pointer;
+
+    .address-info {
+      margin-right: 1.5em;
+    }
+
+    .address-line {
+      font-weight: 700;
+    }
+
+    .address-actions {
+      button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .address-header {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .address.selected {
+    border: 5px solid var(--green);
+  }
+
+  .delete-btn,
+  .new-address-btn {
+    color: var(--white);
+    border: 2px solid var(--red) !important;
+    font-size: 1em !important;
+    padding: 0.5em 1em;
+  }
+
+  .delete-btn {
+    background: var(--red) !important;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .new-address-btn {
+    color: var(--green);
+    border: 2px solid var(--green) !important;
+    background-color: none;
+    background: none;
+  }
+}

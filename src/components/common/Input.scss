@@ -1,0 +1,23 @@
+.input-container {
+  width: 100%;
+  margin-bottom: 2em;
+  & > * {
+    display: block;
+  }
+
+  label {
+    margin-bottom: 0.5em;
+    letter-spacing: 0.2px;
+    padding-inline: 0.5em;
+  }
+
+  input {
+    border: none;
+    width: 100%;
+    padding: 0.5em;
+    outline: none;
+    border-bottom: 2px solid var(--black-100);
+    font-weight: 500;
+    margin-top: 1em;
+  }
+}

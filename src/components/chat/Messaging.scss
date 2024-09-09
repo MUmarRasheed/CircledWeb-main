@@ -1,0 +1,150 @@
+.round-image {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center top;
+  height: auto;
+  max-width: 40px;
+}
+
+.head-wrap {
+  display: flex;
+  gap: 1.2em;
+  align-items: center;
+
+  h3 {
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+#messenger {
+  max-width: 1000px;
+  // margin-left: auto;
+  padding: 1em;
+
+  // flex: 1;
+
+  --bar-height: 6em;
+  --texter-height: 12em;
+  --color: #f3f3f3;
+  height: calc(100vh - var(--bar-height));
+
+  .big-image {
+    max-width: 50px;
+  }
+  .small-image {
+    max-width: 20px;
+    height: 20px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    background-color: var(--color);
+  }
+
+  .error-container {
+    display: grid;
+    gap: 1em;
+  }
+
+  .chat-container {
+    padding: 1em;
+
+    .messages-container {
+      height: calc(100vh - var(--bar-height) - var(--texter-height));
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      display: grid;
+      gap: 2em;
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none; /* Firefox */
+
+      &::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+      }
+
+      .message-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .message-info {
+          color: var(--black-100);
+        }
+
+        .message-content {
+          display: flex;
+          gap: 1em;
+          align-items: center;
+          margin-bottom: 0.75em;
+
+          .text {
+            background-color: var(--color);
+            padding: 0.75em 1em;
+            border-radius: 6px;
+            margin-block: 0;
+          }
+        }
+
+        &.my-message {
+          align-items: flex-end;
+
+          .message-content {
+            flex-direction: row-reverse;
+            gap: 0.5em;
+            align-items: flex-end;
+
+            .text {
+              background: var(--g-background);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .texter {
+    form {
+      display: flex;
+      gap: 1em;
+      padding-block: 1em;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.4em;
+    }
+
+    button {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #back-icon {
+    display: block;
+
+    img {
+      height: 20px;
+    }
+  }
+
+  #messenger {
+    padding: 0;
+  }
+
+  .sm-hide {
+    display: none !important;
+  }
+
+  #chat-split {
+    display: block;
+  }
+}

@@ -1,0 +1,29 @@
+.delivary-location {
+  max-width: 500px;
+  margin: 1em auto;
+  width: 100%;
+  background-color: var(--white-300);
+  padding: 0.25em 1em;
+  border-radius: 5px;
+
+  .address-choose {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+#order-confirm {
+  .cost-contento {
+    justify-content: space-between;
+  }
+
+  .summary {
+    margin-block: 2em;
+  }
+
+  .address-choose-wrap {
+    height: 70vh;
+    width: 90vw;
+  }
+}

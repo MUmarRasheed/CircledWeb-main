@@ -1,0 +1,41 @@
+#loading-screen {
+  margin-block: 4em;
+  filter: grayscale(100%); /* Black and white images */
+
+  .grounded-radiants {
+    animation: spin 0.7s ease-in-out infinite;
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    border: 4px solid transparent;
+    // border-top: none;
+    border-radius: 50%;
+    background: var(--g-background);
+
+    background-clip: padding-box;
+  }
+
+  .grounded-radiants::after {
+    position: absolute;
+    inset: 20px;
+    border-radius: 50%;
+
+    background: var(--white);
+    content: "";
+    z-index: -1;
+  }
+
+  .load-text {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2em;
+    color: var(--black-100);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

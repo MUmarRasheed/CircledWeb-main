@@ -1,0 +1,90 @@
+#footer {
+  background: var(--black-300);
+  display: flex;
+  gap: 4em;
+  padding: 2em 3em;
+  color: var(--white-100);
+  line-height: var(--l-28);
+  letter-spacing: 0.8px;
+  flex-wrap: wrap;
+
+  #comp-logo {
+    width: 80px;
+    filter: grayscale(100%); /* Black and white images */
+  }
+
+  & > * {
+    flex: 1;
+  }
+
+  .logos > img {
+    display: block;
+    max-width: 100px;
+  }
+
+  a {
+    display: block;
+  }
+
+  .company p {
+    font-size: var(--f-12);
+    line-height: var(--l-18);
+    margin-top: 2.5em;
+    line-height: 22px;
+  }
+
+  .topic h3 {
+    color: var(--white);
+    margin-bottom: 1em;
+    font-size: 15px;
+  }
+
+  .topic a {
+    font-size: 13px;
+  }
+
+  .social-icons {
+    gap: 1em;
+    margin-top: 1em;
+    img {
+      filter: invert(99%) sepia(17%) saturate(51%) hue-rotate(296deg)
+        brightness(112%) contrast(96%);
+
+      width: 24px;
+      height: 24px;
+
+      &:hover {
+        filter: invert(100%) sepia(0%) saturate(13%) hue-rotate(267deg)
+          brightness(106%) contrast(104%);
+      }
+    }
+  }
+}
+
+.bottom {
+  background-color: var(--black);
+  padding: 1em 3em;
+  color: var(--white-100);
+
+  p {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #footer,
+  .bottom {
+    gap: 2em;
+    padding: 2em 1em;
+  }
+
+  #footer > * {
+    flex-basis: 45%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #footer > * {
+    flex-basis: 100%;
+  }
+}

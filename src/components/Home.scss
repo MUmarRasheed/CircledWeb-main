@@ -1,0 +1,111 @@
+#hero-section {
+  background: url(/assets/Hero.png) no-repeat center center;
+  background-size: cover;
+  filter: grayscale(100%); /* Black and white images */
+  height: calc(100vh - 10em);
+
+  display: grid;
+  place-items: center;
+  color: var(--white); /* White text on black background */
+
+  .title {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 0.25em;
+    max-width: 500px;
+  }
+
+  .subtitle {
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+
+  .hero-buttons {
+    // max-width: 300px;
+    gap: 2em;
+    margin-top: 2.5em;
+    justify-content: center;
+    filter: grayscale(100%); /* Black and white images */
+
+
+    .btn-container {
+      width: auto;
+      filter: grayscale(100%); /* Black and white images */
+
+    }
+
+    .buy-now-btn,
+    .outline-btn {
+      width: fit-content;
+      padding: 0.5em 1em;
+      margin: 0;
+      filter: grayscale(100%); /* Black and white images */
+      background-color: var(--black); /* Black button background */
+      color: var(--white); /* White text */
+    }
+
+    .outline-btn {
+      background: none;
+      border-color: var(--white); /* White border */
+      color: var(--white); /* White text */
+    }
+  }
+}
+
+#browse-cats,
+#latest-pros {
+  margin-block: 3em;
+  filter: grayscale(100%); /* Black and white images */
+
+  .category-container,
+  .products-wrapper {
+    margin-block: 3em 2em;
+    flex-wrap: wrap;
+    filter: grayscale(100%); /* Black and white images */
+  }
+
+  .more-link {
+    display: block;
+    text-align: center;
+    filter: grayscale(100%); /* Black and white images */
+    margin-top: 3em;
+    font-weight: 700;
+    color: var(--white); /* White text */
+    text-decoration: underline;
+  }
+
+  button {
+    font-size: 14px;
+    background-color: var(--black); /* Black button */
+    color: var(--white); /* White text */
+    filter: grayscale(100%); /* Black and white images */
+  }
+}
+
+#browse-cats {
+  margin-block: 5em;
+  filter: grayscale(100%); /* Black and white images */
+}
+
+#community {
+  padding-block: 1em 2em;
+  background-color: var(--white-300);
+  filter: grayscale(100%); /* Black and white images */
+
+  .category-container {
+    justify-content: space-around;
+    gap: 3em;
+    margin-top: 1.5em;
+    margin-inline: 4em;
+    filter: grayscale(100%); /* Black and white images */
+
+  }
+  .person {
+    margin: auto;
+    img {
+      max-width: 120px;
+      height: auto;
+      filter: grayscale(100%); /* Black and white images */
+    }
+  }
+}

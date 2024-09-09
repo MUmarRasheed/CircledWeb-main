@@ -1,0 +1,42 @@
+#sidebar {
+  padding: 1em;
+  padding-right: 0;
+  max-width: 700px;
+  margin-inline: auto;
+  width: 100%;
+
+  a:active,
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.user-preview {
+  margin-bottom: 1em;
+  padding: 0.75em 1em;
+  display: flex;
+  gap: 2em;
+  background-color: var(--white-300);
+  align-items: center;
+
+  &.current-user {
+    background-color: #e7e7e7;
+  }
+
+  .round-image {
+    width: 50px;
+    max-width: none;
+    object-fit: cover;
+  }
+
+  h3 {
+    font-weight: 600;
+    margin: 0;
+    font-size: 1.05em;
+  }
+
+  p {
+    font-size: 0.9em;
+    margin-block: 0.6em 0;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "how-to": "How-to",
+  "signin": "Sign in",
+  "signup": "Sign up",
+  "home": "Home",
+  "design": "Design",
+  "clothing": "Clothing",
+  "services": "Services",
+  "howItWorks": "How it works",
+  "aboutUsOrWhyCW": "About Us or Why CW?",
+  "newsOrMagazine": "News/Magazine",
+  "search": "Search...",
+  "footer": {
+    "companyText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled",
+    "quickLinks": "Quick Links",
+    "aboutUs": "About Us",
+    "charity": "Charity Program",
+    "reviews": "Customer Reviews",
+    "blog": "Our Blog",
+    "meta": "Meta",
+    "dataProtection": "Data Protection Policy",
+    "terms": "General terms and conditions policy",
+    "cookieConsent": "Cookie Consent",
+    "imprint": "Imprint Policy",
+    "metaAndSocial": "Meta and Social",
+    "revocationPolicy": "Revocation Policy",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "bottomText": "© 2022 Brand Name.All Rights Reserved."
+  }
+}

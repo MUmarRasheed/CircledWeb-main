@@ -1,0 +1,30 @@
+.btn-container {
+  width: 100%;
+  display: flex;
+  place-items: center;
+  filter: grayscale(100%); /* Black and white images */
+}
+
+.btn-primary {
+  background: var(--g-background);
+  border-radius: 4px;
+  padding: 0.75em 2em;
+  cursor: pointer;
+  border: none;
+  margin: 1em auto;
+}
+
+.loader {
+  height: 1.5em;
+  width: 1.5em;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
